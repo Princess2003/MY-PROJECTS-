@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "491568569315",
+    "project_id": "reliablehouse-df437",
+    "storage_bucket": "reliablehouse-df437.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491568569315:android:e365178a30ee7ba2b25ed6",
+        "android_client_info": {
+          "package_name": "com.example.reliablehouse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8CwJth_z9-8OOw-Y-wX_2_rXxlVA_gOA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

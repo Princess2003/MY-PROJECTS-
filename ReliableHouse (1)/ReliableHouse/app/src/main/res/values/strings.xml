@@ -1,0 +1,35 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">ReliableHouse</string>
+
+    <!-- Donation Types -->
+    <string-array name="donation_types">
+        <item>Cash</item>
+        <item>Items</item>
+        <item>Both</item>
+    </string-array>
+
+    <!-- Payment Methods -->
+    <string-array name="payment_methods">
+        <item>Credit Card</item>
+        <item>PayPal</item>
+    </string-array>
+
+    <!-- Labels for UI Elements -->
+    <string name="donation_amount_label">Enter Donation Amount</string>
+    <string name="donation_amount_hint">Donation Amount</string>
+    <string name="select_items_label">Select Items to Donate</string>
+    <string name="pickup_point_label">Enter Pickup Point</string>
+    <string name="pickup_point_hint">Pickup Point Address</string>
+    <string name="submit_button_text">Submit Donation</string>
+    <string name="other_items_hint">Specify Other Items</string>
+
+    <!-- Messages and Toasts -->
+    <string name="fill_all_fields_message">Please fill all required fields</string>
+    <string name="donation_success_message">Donation Submitted Successfully</string>
+    <string name="donation_failure_message">Error: Unable to Submit Donation</string>
+
+    <!-- Other Strings for General Use -->
+    <string name="welcome_message">Welcome to ReliableHouse</string>
+    <string name="app_description">Your reliable platform for donations</string>
+</resources>

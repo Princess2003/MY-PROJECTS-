@@ -1,0 +1,159 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonateActivity">
+
+    <!-- Donation Type Spinner -->
+    <Spinner
+        android:id="@+id/donationTypeSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/donation_types"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <!-- Donation Amount Section -->
+    <LinearLayout
+        android:id="@+id/donationAmountSection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/donationTypeSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Donation Amount"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/donationAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Donation Amount"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <!-- Item Donation Section -->
+    <LinearLayout
+        android:id="@+id/itemDonationSection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/donationAmountSection"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Items to Donate"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/donateClothes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clothes" />
+
+        <CheckBox
+            android:id="@+id/donateFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food" />
+
+        <CheckBox
+            android:id="@+id/donateHygiene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hygiene Products" />
+
+        <CheckBox
+            android:id="@+id/donateOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other" />
+
+        <EditText
+            android:id="@+id/otherItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Specify Other Items"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- Pickup Point Section -->
+    <LinearLayout
+        android:id="@+id/pickupPointSection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/itemDonationSection"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Pickup Point"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/pickupPoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pickup Point Address" />
+    </LinearLayout>
+
+    <!-- Payment Method Spinner -->
+    <Spinner
+        android:id="@+id/paymentMethodSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/payment_methods"
+        app:layout_constraintTop_toBottomOf="@id/pickupPointSection"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/donateButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Submit Donation"
+        android:backgroundTint="#2980b9"
+        app:layout_constraintTop_toBottomOf="@id/paymentMethodSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
